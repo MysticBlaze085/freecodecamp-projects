@@ -3,10 +3,37 @@
 }
 
 @mixin cardSizing {
-  max-height: 540px;
-  max-width: 540px;
+  max-width: 50vw;
 }
 
 .image-slide {
   @include cardSizing;
+  padding: 0 !important;
+  animation: load-fade 7s 1;
+  -webkit-animation: load-fade 7s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes load-fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: .5;
+  }
+}
+
+@-webkit-keyframes load-fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: .5;
+  }
 }
