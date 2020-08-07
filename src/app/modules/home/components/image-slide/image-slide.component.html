@@ -1,1 +1,5 @@
-<p>image-slide works!</p>
+<ng-container *ngIf="image.src">
+    <mat-card class="image-slide h-50" [@flyInOut]>
+        <img mat-card-image [src]="image.src" [alt]="image.alt" />
+    </mat-card>
+</ng-container>

@@ -1,0 +1,12 @@
+:host {
+  width: -200%;
+}
+
+@mixin cardSizing {
+  max-height: 540px;
+  max-width: 540px;
+}
+
+.image-slide {
+  @include cardSizing;
+}
