@@ -7,7 +7,6 @@
 }
 
 .image-slide {
-  @include cardSizing;
   padding: 0 !important;
   animation: load-fade 7s 1;
   -webkit-animation: load-fade 7s 1;

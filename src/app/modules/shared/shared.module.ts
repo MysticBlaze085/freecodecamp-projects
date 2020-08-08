@@ -4,11 +4,12 @@ import { DynamicFormInputComponent, MaterialsModule } from '.';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     schemas: [NO_ERRORS_SCHEMA],
     declarations: [DynamicFormInputComponent],
-    imports: [CommonModule, MaterialsModule, ReactiveFormsModule, FormsModule, NgbModule, HttpClientModule],
-    exports: [MaterialsModule, ReactiveFormsModule, FormsModule, NgbModule],
+    imports: [CommonModule, MaterialsModule, ReactiveFormsModule, FormsModule, NgbModule, HttpClientModule, FlexLayoutModule],
+    exports: [MaterialsModule, ReactiveFormsModule, FormsModule, NgbModule, FlexLayoutModule],
 })
 export class SharedModule {}

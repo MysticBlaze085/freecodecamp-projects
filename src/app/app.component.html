@@ -1,8 +1,9 @@
-<div fxLayout="column">
-    <div fxFlex="33" class="one">
+<div class="h-100" fxLayout="column wrap" fxLayoutAlign.gt-md="center" fxLayoutAlign.lt-md="start">
+    <div class="h-100" fxLayout.gt-xs="row" fxLayout.lt-xs="column" fxLayoutAlign.gt-xs="center center" fxLayoutAlign.lt-xs="center center">
         <app-navigation class="mr-4"></app-navigation>
+
+        <main class="mat-typography" fxFlex.lt-xs="100%" fxFlex.gt-xs="50%">
+            <router-outlet fxLayout="column wrap"></router-outlet>
+        </main>
     </div>
-    <main fxFlex="50" class="mat-typography">
-        <router-outlet></router-outlet>
-    </main>
 </div>
