@@ -9,7 +9,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
         trigger('flyInOut', [
             state('in', style({ transform: 'translate(0)' })),
             transition('void => *', [
-                style({ transform: 'translate(250%)' }),
+                style({ transform: 'translate(100%)' }),
                 animate(2000),
                 animate(
                     2000,

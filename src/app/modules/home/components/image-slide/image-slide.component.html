@@ -1,6 +1,6 @@
-<app-welcome-text></app-welcome-text>
-<ng-container *ngIf="image.src">
+<div *ngIf="image.src" class="d-flex align-items-end justify-content-end">
+    <app-welcome-text class="home-welcome-text"></app-welcome-text>
     <mat-card class="image-slide h-50" [@flyInOut]>
         <img mat-card-image [src]="image.src" [alt]="image.alt" />
     </mat-card>
-</ng-container>
+</div>
