@@ -1,8 +1,29 @@
 <div class="d-flex flex-column">
+    <a mat-fab class="mb-4" color="primary" href="https://seerblazesolutions.com/portfolio">
+        <mat-icon matTooltip="Back to Portfolio" matTooltipPosition="right">chevron_left</mat-icon>
+    </a>
     <button mat-fab class="mb-4" color="primary" routerLink="">
-        <mat-icon matTooltip="Weather" matTooltipPosition="right">nights_stay</mat-icon>
+        <mat-icon matTooltip="Project Home Page" matTooltipPosition="right">work</mat-icon>
+    </button>
+    <button mat-fab class="mb-4" color="primary" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon matTooltip="Free Code Camp - Projects" matTooltipPosition="right">code</mat-icon>
     </button>
     <button mat-fab class="mb-4" color="primary" matTooltipPosition="right" routerLink="/basic-dashboard">
-        <mat-icon>dashboard</mat-icon>
+        <mat-icon matTooltip="Basic Dashboard" matTooltipPosition="right">dashboard</mat-icon>
     </button>
 </div>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>
+        <mat-icon>nights_stay</mat-icon>
+        <span>Weather - Show Local Weather</span>
+    </button>
+    <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+    </button>
+</mat-menu>
