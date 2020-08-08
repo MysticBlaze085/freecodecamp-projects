@@ -8,6 +8,10 @@ const routes: Routes = [
         path: 'basic-dashboard',
         loadChildren: () => import('./modules/dashboard/dashboard.module').then((m) => m.DashboardModule),
     },
+    {
+        path: 'local-weather',
+        loadChildren: () => import('./modules/local-weather/local-weather.module').then((m) => m.LocalWeatherModule),
+    },
 ];
 
 @NgModule({
