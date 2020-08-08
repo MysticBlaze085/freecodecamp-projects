@@ -2,3 +2,11 @@ main {
   max-height: 90vh;
   overflow: scroll;
 }
+
+@media only screen and (max-width: 800px) {
+  main {
+    padding-top: 100px;
+    max-height: 100% !important;
+    overflow: scroll;
+  }
+}
