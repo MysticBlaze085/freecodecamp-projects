@@ -1,3 +1,9 @@
-<div class="container h-100 d-flex flex-column justify-content-center" *ngIf="$data | async as data">
-    <app-view-form [options]="options" (filterState)="setFilteredByRegion($event)" [viewData]="regionData" class="w-100"></app-view-form>
+<div fxLayout="column" fxLayoutAlign="center center" class="h-100" *ngIf="$data | async as data">
+    <app-view-form
+        fxLayout="column"
+        [options]="options"
+        (filterState)="setFilteredByRegion($event)"
+        [viewData]="regionData"
+        class="w-100"
+    ></app-view-form>
 </div>

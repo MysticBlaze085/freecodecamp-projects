@@ -40,4 +40,13 @@
 .home-welcome-text {
   z-index: 1000;
   position: absolute;
+  max-width: 50vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-welcome-text {
+    z-index: 1000;
+    position: absolute;
+    max-width: 100vw;
+  }
 }

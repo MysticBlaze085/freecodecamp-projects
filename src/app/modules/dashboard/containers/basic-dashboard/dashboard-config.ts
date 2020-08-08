@@ -11,6 +11,8 @@ export const mapWidgetData = (params) => {
             showValues: '1',
             rotateValues: '1',
             theme: 'fusion',
+            width: '100%',
+            height: '100%',
             xAxisName: 'Statistic',
             yAxisName: 'Measure',
         },
