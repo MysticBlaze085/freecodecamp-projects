@@ -6,8 +6,6 @@ import { FormControl, FormGroup } from '@angular/forms';
     providedIn: 'root',
 })
 export class DynamicFormControlService {
-    constructor() {}
-
     toFormGroup(formBase: FormBase<string>[]) {
         const group: any = {};
 

@@ -1,1 +1,10 @@
-<p>local-weather works!</p>
+<div *ngIf="weatherData$ | async as data" fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex="40%">
+        <mat-card class="weather-header" [ngClass]="dayLightBackground">
+            <div class="h-100" fxLayout="column">
+                <mat-icon fxFlexAlign="start" [ngClass]="mainIcon"></mat-icon>
+                <span fxFlexAlign="end">{{ todaysDate }}</span>
+            </div>
+        </mat-card>
+    </div>
+</div>
