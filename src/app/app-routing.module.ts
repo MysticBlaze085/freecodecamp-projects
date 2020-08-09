@@ -12,6 +12,7 @@ const routes: Routes = [
         path: 'local-weather',
         loadChildren: () => import('./modules/local-weather/local-weather.module').then((m) => m.LocalWeatherModule),
     },
+    { path: '', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
