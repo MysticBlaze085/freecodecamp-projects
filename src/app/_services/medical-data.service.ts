@@ -12,9 +12,9 @@ export class MedicalDataService {
     $medicalData: Observable<IMedicalData[]> = this.medicalData.asObservable();
     constructor(private http: HttpClient) {}
 
-    getAllMedicalData(): Observable<any> {
+    getAllMedicalData(): Observable<IMedicalData[]> {
         return this.http.get(`https://dashboard.healthit.gov/api/open-api.php?source=hospital-mu-public-health-measures.csv`).pipe(
-            tap((res) => {
+            tap((res: IMedicalData[]) => {
                 const filterByyear = res.filter((response) => response.period === '2015');
                 this.medicalData.next(filterByyear);
             })
