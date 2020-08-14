@@ -1,5 +1,5 @@
-<div fxLayout="column" fxLayoutAlign="end center">
-    <app-welcome-text fxFlex.gt-sm="50%" fxFlexAlign="end" class="home-welcome-text pr-2"></app-welcome-text>
+<div fxLayout="column" fxLayoutAlign="center center">
+    <app-welcome-text fxFlex.gt-sm="50%" fxFlexAlign="start" class="home-welcome-text pr-2"></app-welcome-text>
     <mat-card *ngIf="image.src" class="image-slide" [@flyInOut]>
         <img mat-card-image [src]="image.src" [alt]="image.alt" />
     </mat-card>

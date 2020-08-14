@@ -1,3 +1,5 @@
 <div *ngIf="chartData" class="w-100" fxLayout.gt-sm="column" fxLayout.lt-md="row" fxLayoutAlign="center center">
-    <fusioncharts type="Column2D" dataFormat="JSON" [dataSource]="chartData"></fusioncharts>
+    <div fxFlex.gt-sm="50%">
+        <fusioncharts [width]="'60%'" type="Column2D" dataFormat="JSON" [dataSource]="chartData"></fusioncharts>
+    </div>
 </div>
