@@ -1,5 +1,6 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ImageSlideObject } from 'src/app/_interfaces';
 @Component({
     selector: 'app-image-slide',
     templateUrl: './image-slide.component.html',
@@ -27,7 +28,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
     ],
 })
 export class ImageSlideComponent implements OnInit {
-    @Input() image: { src: string; alt: string };
+    @Input() image: ImageSlideObject;
 
     constructor() {}
 
